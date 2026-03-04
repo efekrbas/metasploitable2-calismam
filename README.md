@@ -25,9 +25,10 @@ Ardından backdoor oluşturmak için unix/ftp/vsftpd_234_backdoor exploitini kul
 
  
 
-Hedef sistem üzerinde çalışan VNC (Virtual Network Computing) servisi, uzaktan masaüstü yönetimi sağlamak amacıyla yapılandırılmıştır. Ancak, yapılan güvenlik incelemesinde bu servisin kimlik doğrulama mekanizmasının zayıf olduğu veya varsayılan düşük güvenlikli bir parola (password) kullandığı tespit edilmiştir. Yapılan taramalarda hedef sistemin 8180 portunda çalışan Apache Tomcat servisinin yönetim panelinin varsayılan kimlik bilgileriyle (tomcat:tomcat) erişilebilir olduğu tespit edilmiştir. Metasploit üzerinden ilgili istismar modülü kullanılarak şu adımlar gerçekleştirilmiştir:
+Hedef sistem üzerinde çalışan VNC (Virtual Network Computing) servisi, uzaktan masaüstü yönetimi sağlamak amacıyla yapılandırılmıştır. Ancak, yapılan güvenlik incelemesinde bu servisin kimlik doğrulama mekanizmasının zayıf olduğu veya varsayılan düşük güvenlikli bir parola (password) kullandığı tespit edilmiştir.
 <img width="939" height="383" alt="image" src="https://github.com/user-attachments/assets/8f05af27-181e-4ed3-877f-529d4ad28482" />
 
+Yapılan taramalarda hedef sistemin 8180 portunda çalışan Apache Tomcat servisinin yönetim panelinin varsayılan kimlik bilgileriyle (tomcat:tomcat) erişilebilir olduğu tespit edilmiştir. Metasploit üzerinden ilgili istismar modülü kullanılarak şu adımlar gerçekleştirilmiştir:
 Payload Yükleme: Hedef sunucuya kötü amaçlı bir Java Arşivi (.war dosyası) yüklenmiştir. (Görselde görülen jRAmlAv...war dosyası).
 Tetikleme: Yüklenen bu dosya üzerinden bir .jsp betiği çalıştırılarak hedef sistemin saldırgan makineye (192.168.138.128) geri bağlantı (reverse connection) kurması sağlanmıştır.
 Oturum Açılması: 2026-03-04 tarihinde, saat 05:40:42'de hedef sistem üzerinde tam yetkili bir Meterpreter oturumu başarıyla açılmıştır.
