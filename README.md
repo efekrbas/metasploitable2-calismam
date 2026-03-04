@@ -55,4 +55,5 @@ Ingreslock (Port 1524) Zayıf Yapılandırma Sömürüsü
 İşlem: Herhangi bir exploit aracı kullanmadan, sadece Netcat (nc) ile 1524 portuna bağlantı isteği gönderilmiştir.
 Bulgu: Sistemin hiçbir kimlik doğrulaması (kullanıcı adı/şifre) sormadan doğrudan bir root shell sunduğu görülmüştür.
 Analiz: Görseldeki root@metasploitable:/# ibaresi, sistemde unutulmuş veya kasten açık bırakılmış bir yönetimsel zafiyetin varlığını kesinleştirmiştir.
+
 <img width="545" height="144" alt="image" src="https://github.com/user-attachments/assets/3f19b4df-501a-4638-bd41-14e7b891bd0d" />
