@@ -4,7 +4,7 @@
 <img width="945" height="244" alt="image" src="https://github.com/user-attachments/assets/3d857e55-3cef-43de-9d46-b12950031c73" />
 
  
-Sonrasında 192.168.138.129 IP’li bir cihaz buldum.
+Sonrasında varsayılan makine IP'lerimden farklı olarak 192.168.138.129 IP’li bir cihaz buldum.
 Bulduğum 192.168.138.129 IP adresine nmap taraması gerçekleştirdim.
 <img width="945" height="452" alt="image" src="https://github.com/user-attachments/assets/d14fa87d-77c3-4d90-bd62-0a0a2f24bde7" />
 
@@ -15,7 +15,7 @@ Samba servisinde kullanabileceğim exploiti bulmak için search parametresini ku
 
 
  
-Sonrasında ise msfconsole aracını kullanarak exploit/multi/samba/usermap_script exploitini use parametresi ile seçtim, set RHOSTS komutu ile ilk adımda bulduğum girdim ve exploit komutunu yazıp exploti çalıştırdım. Çalıştırdığım exploitle bir shell elde ettim, elde ettiğim shellde whoami komutunu kullandığımda her hangi bir şifre gerekmeden root (en yetkili kullanıcı) olduğumu farkettim.
+Sonrasında ise msfconsole aracını kullanarak exploit/multi/samba/usermap_script exploitini "use" parametresi ile seçtim, "set RHOSTS" komutu ile ilk adımda bulduğum IP Adresini hedef olarak seçtim ve "exploit" komutunu yazıp exploti çalıştırdım. Çalıştırdığım exploitle bir shell elde ettim, elde ettiğim shellde "whoami" komutunu kullandığımda her hangi bir şifre gerekmeden root (en yetkili kullanıcı) olduğumu farkettim.
 <img width="945" height="272" alt="image" src="https://github.com/user-attachments/assets/2d1dbf73-2e0e-4589-8cc6-608d1f7831f9" />
 
  
